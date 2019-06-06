@@ -4,4 +4,4 @@ title:  "Encrypt this post"
 categories: jekyll update
 ---
 
-Here you can encrypt the content by pressing the "Encrypt" button.
+Click on "Encrypt". This will encrypt the content of this post. The password used in the "Decrypt this post" page is **password**.
