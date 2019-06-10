@@ -4,7 +4,15 @@ layout: post
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
 
-<div id="encrypted_content">{{content}}</div>
+<div style="padding:0px 10px 10px 10px;">
+<button type="button" onclick='document.getElementById("encrypted_content").innerHTML = encrypted.toString()'>Encrypt</button>
+
+<button type="button" onclick='document.getElementById("encrypted_content").innerHTML = decrypt.toString(CryptoJS.enc.Utf8)'>Decrypt</button>
+</div>
+
+<div class="parent">
+    <div class="child" id="encrypted_content">{{content}}</div>
+</div>
 
 <script ltype="text/javascript" >
   function getCookie(name) {
@@ -40,8 +48,4 @@ layout: post
     padding: CryptoJS.pad.Pkcs7
   });
 </script>
-
- <button type="button" onclick='document.getElementById("encrypted_content").innerHTML = decrypt.toString(CryptoJS.enc.Utf8)'>Decrypt</button>
-
- <button type="button" onclick='document.getElementById("encrypted_content").innerHTML = encrypted.toString()'>Encrypt</button>
  
