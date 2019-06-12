@@ -4,24 +4,4 @@
 </form>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
-
-<script>
-  function set_passphrase() {
-    passphrase = document.getElementById("passphrase").value;
-
-  function setCookie(name, value, days) {
-    var expires = "";
-    if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
-  }
-
-  // Passphrase
-  setCookie('passphrase', passphrase, 100);
-  var passphrase = getCookie('passphrase');
-  cryptkey = CryptoJS.enc.Utf8.parse(passphrase);
-}
-</script>
+<script src="/assets/encrypted.js"></script>
