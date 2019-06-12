@@ -2,6 +2,11 @@
 layout: post
 ---
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js">
+</script>
+
+<script src="/assets/encrypted.js"></script>
+
 <div style="padding:0px 10px 10px 10px;">
     <div id="encrypted_block" style="display: none;">
         <button id="btn_decrypt" type="button" onclick='document.getElementById("encrypted_content").innerHTML = decrypt.toString(CryptoJS.enc.Utf8)'>Decrypt</button>
@@ -17,5 +22,4 @@ layout: post
     <div class="child" id="encrypted_content">{{content}}</div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
-<script src="/assets/encrypted.js"></script>
+<script src="/assets/views.js"></script>
